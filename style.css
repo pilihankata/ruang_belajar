@@ -1,0 +1,175 @@
+:root {
+  --bg-paper: #f4f1ea;
+  --bg-card: #faf8f5;
+  --text-ink: #2b2927;
+  --text-muted: #66615b;
+  --border-line: #dcd6c8;
+  --accent-literasi: #2e5a44;
+  --accent-pribadi: #a64b2a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-paper);
+  color: var(--text-ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header & Navigasi */
+.site-header {
+  padding: 48px 0 32px;
+  border-bottom: 1px solid var(--border-line);
+  margin-bottom: 40px;
+}
+
+.site-title {
+  font-size: 2.2rem;
+  font-weight: normal;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+
+.site-subtitle {
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 24px;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-size: 0.95rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--text-muted);
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: var(--text-ink);
+  border-bottom-color: var(--accent-pribadi);
+}
+
+/* Kotak Pengantar */
+.intro-box {
+  background-color: var(--bg-card);
+  border-left: 3px solid var(--accent-literasi);
+  padding: 20px 24px;
+  margin-bottom: 40px;
+  border-radius: 0 6px 6px 0;
+}
+
+/* Daftar Kartu Konten */
+.content-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-line);
+  padding: 28px;
+  border-radius: 8px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(43, 41, 39, 0.06);
+}
+
+.badge {
+  display: inline-block;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.badge-pribadi {
+  background-color: rgba(166, 75, 42, 0.12);
+  color: var(--accent-pribadi);
+}
+
+.badge-literasi {
+  background-color: rgba(46, 90, 68, 0.12);
+  color: var(--accent-literasi);
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+
+.card h2 a {
+  text-decoration: none;
+  color: var(--text-ink);
+}
+
+.card h2 a:hover {
+  text-decoration: underline;
+}
+
+.card p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.meta {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 64px;
+  padding: 32px 0;
+  border-top: 1px solid var(--border-line);
+  text-align: center;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
