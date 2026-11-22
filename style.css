@@ -188,3 +188,10 @@ body {
   font-size: 0.9rem;
   color: var(--text-muted);
 }
+.brand-link,
+.brand-title-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+}
